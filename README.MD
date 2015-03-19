@@ -2,7 +2,7 @@
 
 ##Usage
 
-###Include link.js in your extension background page, for example:
+###Include link.js in your extension background page:
 
 ```json
 
@@ -14,7 +14,7 @@
 
 This lib exposes global object `fvdSpeedDialLink`.
 
-###Set widget info by calling `fvdSpeedDialLink.setWidgetInfo`, for example:
+###Set widget info by calling `fvdSpeedDialLink.setWidgetInfo`:
 
 ```javascript
 fvdSpeedDialLink.setWidgetInfo({
