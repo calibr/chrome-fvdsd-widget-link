@@ -1,0 +1,17 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "link.js", "bg.js" ]
+   },
+   "description": "Example FVD widget",
+   "icons": {
+      "128": "icons/128x128.png",
+      "16": "icons/16x16.png",
+      "48": "icons/48x48.png"
+   },
+   "manifest_version": 2,
+   "name": "Test widget",
+   "web_accessible_resources": [ "widget.html" ],
+   "permissions": [ "tabs", "history", "storage", "unlimitedStorage", "management", "webRequest", "http://fvdspeeddial.com/widgets/*", "identity", "*://*.twitter.com/*", "https://*.facebook.com/*", "http://*.facebook.com/*", "https://oauth.io/*", "https://accounts.google.com/*", "https://www.googleapis.com/*" ],
+   "version": "1.0"
+}
