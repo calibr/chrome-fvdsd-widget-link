@@ -1,8 +1,8 @@
-#Speed Dial [FVD] Widget communication lib
+##Speed Dial [FVD] Widget communication lib
 
 ##Usage
 
-**Include link.js in your extension background page:**
+**Include `link.js` in your extension background page:**
 
 ```json
 
@@ -36,4 +36,11 @@ Each widget have size specified in cells. Single cell have size `250x200`, one-c
 But if your widget width/height in cells more than 1, real size in pixels will be calculated by this formula:
 
 `widthPX = 250 * widthCells + (widthCells-1) * 10`
-`heightPX = 250 * heightCells + (heightCells-1) * 10`
+
+`heightPX = 200 * heightCells + (heightCells-1) * 10`
+
+For example widget `1x2` cells will have size in pixels `250x410`:
+
+`widthPX = 250 * 1 + 0 * 10 = 250`
+
+`heightPX = 200 * 2 + 1 * 10 = 410`
