@@ -30,17 +30,35 @@ fvdSpeedDialLink.setWidgetInfo({
 
 See example for more info.
 
-##Widget sizing model
+##Widget size options
 
-Each widget has size specified in cells. Single cell has size `250x200`, one-cell widget will have that size.
-But if your widget width/height in cells more than 1, real size in pixels will be calculated by this formula:
+Each widget can be located in one or two cells height. Single cell size has `250x200`. Widget with the size of one cell has equal size of the cell. Widget can take up to `2` cells height and `4` cells width. Here are some example of widgets you can make and size calculation:
+
+Width x Height
 
 `widthPX = 250 * widthCells + (widthCells-1) * 10`
 
 `heightPX = 200 * heightCells + (heightCells-1) * 10`
 
-For example widget `1x2` cells will have size in pixels `250x410`:
+`1x1` - single cell widget(`250x200`)
+
+`1x2`:
 
 `widthPX = 250 * 1 + 0 * 10 = 250`
 
 `heightPX = 200 * 2 + 1 * 10 = 410`
+
+`4x2`:
+
+`widthPX = 250 * 4 + 3 * 10 = 1030`
+
+`heightPX = 200 * 2 + 1 * 10 = 410`
+
+`3x1`:
+
+`widthPX = 250 * 3 + 2 * 10 = 770`
+
+`heightPX = 200 * 1 + 0 * 10 = 200`
+
+
+[View Widget Example](https://github.com/calibr/chrome-fvdsd-widget-link/tree/master/widget-example)
