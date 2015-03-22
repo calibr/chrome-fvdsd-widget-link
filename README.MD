@@ -1,4 +1,4 @@
-##Speed Dial [FVD] Widget communication lib
+#Speed Dial [FVD] Widget lib
 
 ##Usage
 
