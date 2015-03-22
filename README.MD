@@ -4,6 +4,8 @@
 
 **Include `link.js` in your extension background page:**
 
+File `manifest.json`:
+
 ```json
 
 "background": {
