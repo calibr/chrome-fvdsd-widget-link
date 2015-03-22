@@ -32,7 +32,7 @@ See example for more info.
 
 ##Widget sizing model
 
-Each widget have size specified in cells. Single cell have size `250x200`, one-cell widget will have that size.
+Each widget has size specified in cells. Single cell has size `250x200`, one-cell widget will have that size.
 But if your widget width/height in cells more than 1, real size in pixels will be calculated by this formula:
 
 `widthPX = 250 * widthCells + (widthCells-1) * 10`
