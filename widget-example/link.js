@@ -50,6 +50,13 @@
       for(var k in this._info) {
         info[k] = this._info[k];
       }
+      // backward compatibility
+      if(info.widthCells && !info.width) {
+        info.width = info.widthCells * 250 + (info.widthCells - 1) * 10;
+      }
+      if(info.heightCells && !info.height) {
+        info.height = info.heightCells * 200 + (info.heightCells - 1) * 10;
+      }
       this._getId(function(id) {
         if(!id) {
           return;

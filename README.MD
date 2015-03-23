@@ -62,5 +62,8 @@ Width x Height
 
 `heightPX = 200 * 1 + 0 * 10 = 200`
 
+##Backward Compatibility
+
+This lib is compatible with old Speed Dial[FVD] widget system, it automatically calculate and set old `width` and `height` parameters if you don't set them explicitly.
 
 [View Widget Example](https://github.com/calibr/chrome-fvdsd-widget-link/tree/master/widget-example)
